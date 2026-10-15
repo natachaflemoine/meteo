@@ -12,23 +12,27 @@
 <body>
    <div class="weather-app">
     <header>
-    <form>
-       <input type="search" placeholder="Enter a city..." required/>
-       <input type="submit" value="Search"/>
+    <form class="search-form">
+       <input type="search" placeholder="Enter a city..." required class="search-form-input"/>
+       <input type="submit" value="Search" class="search-form-button" />
     </form>
    </header>
     <main>
+      <div class="weather-app-data">
         <div>
-         <h1>Port-au-Prince</h1>
-         <p>Sunday 12:38, scattered clouds
+         <h1 class="weather-app-city">Port-au-Prince</h1>
+         <p class="weather-app-details">Sunday 12:38, scattered clouds
             <br>
-            Humidity: 78% , Wind: 3 km/h
+            Humidity: <strong>78%</strong>, Wind: <strong>3 km/h</strong>
          </br>
          </p>
          </div>
-         <div>
-            🌩 12°C
+         <div class="weather-app-temperature-container">
+            <div class="weather-app-icon">🌥</div>
+            <div class="weather-app-temperature">12</div>
+            <div class="weather-app-temperature-unit">°C</div>
          </div>
+      </div>
     </main>
    
     <footer> This project was coded by <a href="https://github.com/natachaflemoine" target="_blank">Natacha Fanini-Lemoine</a> and is <a href="https://github.com/natachaflemoine/meteo" target="_blank">open-sourced on GitHub</a> and <a href="https://shecodes-app-meteo.netlify.app/" target="_blank">hosted on Netlify</a></footer>
